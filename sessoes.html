@@ -14,7 +14,7 @@
     <nav class="navbar bg-black navbar-expand-lg border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand text-warning fs-2" href="/index.html">
-                <img src="/img/logo.svg" alt="Logo" width="60" height="40" class="d-inline-block align-text-top me-0">MegaPixel
+                <img src="/img/logo.png" alt="Logo" width="200" height="50" class="d-inline-block align-text-top me-0">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,9 +44,39 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <h2>Sessões Disponíveis</h2>
+    <div class="text-center" style="margin: 20px;">
+        <h1><span class="badge text-bg-warning">Sessões Disponíveis</span></h1>
     </div>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="table-responsive bg-dark p-4 rounded shadow-lg">
+                    <table class="table table-dark table-hover align-middle">
+                        <thead class="text-warning">
+                            <tr>
+                                <th>Filme</th>
+                                <th>Sala</th>
+                                <th>Data e Hora</th>
+                                <th>Preço</th>
+                                <th>Idioma</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabelaSessoes">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin: 30px; margin-top: 30px; margin-left: 70%;">
+        <a href="/venda-ingressos.html" class="btn btn-warning">Comprar Ingresso</a>
+    </div>
+
+
+
 
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>

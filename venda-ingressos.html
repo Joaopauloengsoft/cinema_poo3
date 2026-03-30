@@ -14,7 +14,7 @@
     <nav class="navbar bg-black navbar-expand-lg border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand text-warning fs-2" href="/index.html">
-                <img src="/img/logo.svg" alt="Logo" width="60" height="40" class="d-inline-block align-text-top me-0">MegaPixel
+                <img src="/img/logo.png" alt="Logo" width="200" height="50" class="d-inline-block align-text-top me-0">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,9 +44,42 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <h2>Venda de ingressos</h2>
+    <div class="text-center" style="margin: 20px;">
+        <h1><span class="badge text-bg-warning">Venda de Ingressos</span></h1>
     </div>
+    <form class="row g-3" style="margin: 20px;">
+        <div class="col-md-6">
+            <label for="selectSessao" class="form-label">Sessão</label>
+            <select id="selectSessao" class="form-select" required>
+                <option selected>Selecione uma sessão disponível</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="inputNomeCliente" class="form-label">Nome do Cliente</label>
+            <input type="text" class="form-control" id="nomeCliente" placeholder="Digite o nome do cliente">
+        </div>
+        <div class="col-md-6">
+            <label for="inputCPF" class="form-label">CPF do Cliente</label>
+            <input type="text" class="form-control" id="cpfCliente" placeholder="Digite o CPF do cliente">
+        </div>
+        <div class="col-md-6">
+            <label for="inputAssento" class="form-label">Assento</label>
+            <input type="text" class="form-control" id="assento" placeholder="Digite a letra/número do assento">
+        </div>
+        <div class="col-md-6">
+            <label for="selectPagamento" class="form-label">Pagamento</label>
+            <select id="selectPagamento" class="form-select" required>
+                 <option selected>Selecione a forma de pagamento</option>
+                 <option>Cartão de Crédito</option>
+                 <option>Cartão de Débito</option>
+                 <option>Pix</option>
+                 <option>Dinheiro</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-warning">Confirmar Venda</button>
+        </div>
+    </form>    
 
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
