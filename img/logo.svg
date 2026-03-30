@@ -1,19 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60">
-  <rect width="100" height="60" rx="5" fill="#ffc107" />
-  
-  <g fill="#000000">
-    <rect x="8" y="5" width="8" height="8" rx="1" />
-    <rect x="26" y="5" width="8" height="8" rx="1" />
-    <rect x="44" y="5" width="8" height="8" rx="1" />
-    <rect x="62" y="5" width="8" height="8" rx="1" />
-    <rect x="80" y="5" width="8" height="8" rx="1" />
-    
-    <text x="50" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="28" letter-spacing="-2">MP</text>
-    
-    <rect x="8" y="47" width="8" height="8" rx="1" />
-    <rect x="26" y="47" width="8" height="8" rx="1" />
-    <rect x="44" y="47" width="8" height="8" rx="1" />
-    <rect x="62" y="47" width="8" height="8" rx="1" />
-    <rect x="80" y="47" width="8" height="8" rx="1" />
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21000 29700"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <font id="FontID0" horiz-adv-x="540" font-variant="normal" class="str1" style="fill-rule:nonzero" font-weight="400">
+	<font-face 
+		font-family="Britannic Bold">
+		<font-face-src>
+			<font-face-name name="Britannic Bold"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="A" horiz-adv-x="540" d="M360.333 667l185.5 -667 -194.333 0 -39.5013 145 -200.666 0 -42.5002 -145 -75.6653 0 197.332 667 169.834 0zm-230 -455.002l163.667 0 -78.667 294.669 -85.0004 -294.669z"/>
+   <glyph unicode="E" horiz-adv-x="532" d="M488.999 667l0 -67.0016 -239 0 0 -201.998 201.002 0 0 -67.0016 -201.002 0 0 -264.001 280.002 0 0 -66.9988 -473 0 0 667 431.998 0z"/>
+   <glyph unicode="G" horiz-adv-x="630" d="M318 360l275 0 0 -360 -61.5004 0 -21.0004 45.832c-53.6662,-37.8313 -110.498,-56.8315 -170.5,-56.8315 -98.8324,0 -175.499,29.5005 -230.164,88.665 -54.5012,59.0009 -81.8351,142.334 -81.8351,249.669 0,104.5 29.0011,189.165 86.8341,253.664 57.833,64.6685 133.498,97.0014 226.999,97.0014 123.167,0 198.167,-63.0013 224.835,-189.001l-90.668 -41.3323 0 16.1678 -1.49805 35.9975c-6.16697,78.8334 -42.6666,118.168 -109.169,118.168 -49.0001,0 -82.4981,-20.834 -100.333,-62.4991 -17.9988,-41.6679 -26.9982,-119.333 -26.9982,-233.002 0,-106.167 7.33211,-178.332 21.8327,-216.332 14.5006,-38.1669 42.1673,-57.1672 83.1667,-57.1672 47.9986,0 72.0006,26.6653 72.0006,79.9986l0 164 -97.0014 0 0 67.0016z"/>
+   <glyph unicode="I" horiz-adv-x="309" d="M251.001 667l0 -667 -193.001 0 0 667 193.001 0z"/>
+   <glyph unicode="L" horiz-adv-x="508" d="M251.001 667l0 -600.002 273.999 0 0 -66.9988 -467 0 0 667 193.001 0z"/>
+   <glyph unicode="M" horiz-adv-x="734" d="M677.001 667l0 -667 -187.001 0 0 463.665 -129.834 -463.665 -107.835 0 -133.332 455.834 0 -455.834 -65.0014 0 0 667 196.333 0 114.168 -403 113.832 403 198.669 0z"/>
+   <glyph unicode="P" horiz-adv-x="597" d="M57.9994 0l0 667 287.168 0c163.165,0 244.834,-65.5008 244.834,-196.5 0,-132.333 -90.668,-198.5 -272.168,-198.5l-66.8324 0 0 -272.001 -193.001 0zm193.001 334.001l43.4989 0c70.3334,0 105.501,46.667 105.501,139.832 0,87.4999 -35.1681,131.168 -105.501,131.168l-43.4989 0 0 -271z"/>
+   <glyph unicode="X" horiz-adv-x="572" d="M541.001 667l-174.833 -285.833 212.498 -381.167 -214.831 0 -128 234.334 -142.001 -234.334 -87.0005 0 188 304.501 -201.166 362.5 214.335 0 119.164 -217.999 128.835 217.999 85.0004 0z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Britannic Bold";font-variant:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+    .str1 {stroke-width:2.11;stroke-miterlimit:22.9256}
+    .str0 {stroke:#373435;stroke-width:16.93;stroke-miterlimit:22.9256}
+    .str2 {stroke:#010101;stroke-width:7.62;stroke-miterlimit:22.9256}
+    .fil1 {fill:#010101}
+    .fil2 {fill:#FFC007}
+    .fil0 {fill:#FFC007}
+    .fil3 {fill:#FFC007}
+    .fnt0 {font-weight:normal;font-size:3604.69px;font-family:'Britannic Bold'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0 str0" x="-60762.3" y="24042.05" width="2416.12" height="921.48"/>
+  <ellipse class="fil0" cx="-61810.06" cy="21912.38" rx="3109.42" ry="3111.5"/>
+  <circle class="fil1 str0" cx="-63753.17" cy="21874.29" r="795.86"/>
+  <circle class="fil1 str0" cx="-61796.3" cy="19960.82" r="795.86"/>
+  <circle class="fil1 str0" cx="-59934.7" cy="21874.29" r="795.86"/>
+  <ellipse class="fil1 str0" cx="-61831.23" cy="23804.65" rx="795.86" ry="821.22"/>
+  <circle class="fil1 str0" cx="-61841.32" cy="21891.06" r="328.56"/>
+  <text x="-58536.53" y="23985.91"  class="fil2 str2 fnt0">MEGA PIXEL</text>
+  <rect class="fil0 str0" x="-58022.3" y="24042.05" width="2416.12" height="921.48"/>
+  <rect class="fil3 str0" x="-55242.3" y="24042.05" width="2416.12" height="921.48"/>
+  <rect class="fil0 str0" x="-52502.3" y="24042.05" width="2416.12" height="921.48"/>
+  <rect class="fil0 str0" x="-49722.3" y="24042.05" width="2416.12" height="921.48"/>
+  <rect class="fil0 str0" x="-46982.3" y="24042.05" width="2416.12" height="921.48"/>
+  <rect class="fil0 str0" x="-44222.3" y="24042.05" width="2416.12" height="921.48"/>
+  <rect class="fil0 str0" x="-41482.3" y="24042.05" width="1985.12" height="921.48"/>
+ </g>
 </svg>
