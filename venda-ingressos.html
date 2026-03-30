@@ -47,37 +47,36 @@
     <div class="text-center" style="margin: 20px;">
         <h1><span class="badge text-bg-warning">Venda de Ingressos</span></h1>
     </div>
-    <form class="row g-3" style="margin: 20px;">
-        <div class="col-md-6">
-            <label for="selectSessao" class="form-label">Sessão</label>
+    <form id="formVenda" class="row g-3" style="margin: 20px;">
+        <div class="col-md-12"> <label for="selectSessao" class="form-label">Sessão</label>
             <select id="selectSessao" class="form-select" required>
-                <option selected>Selecione uma sessão disponível</option>
-            </select>
+                <option value="" selected>Selecione uma sessão disponível</option>
+                </select>
         </div>
         <div class="col-md-6">
-            <label for="inputNomeCliente" class="form-label">Nome do Cliente</label>
-            <input type="text" class="form-control" id="nomeCliente" placeholder="Digite o nome do cliente">
+            <label for="nomeCliente" class="form-label">Nome do Cliente</label>
+            <input type="text" class="form-control" id="nomeCliente" placeholder="Digite o nome do cliente" required>
         </div>
         <div class="col-md-6">
-            <label for="inputCPF" class="form-label">CPF do Cliente</label>
-            <input type="text" class="form-control" id="cpfCliente" placeholder="Digite o CPF do cliente">
+            <label for="cpfCliente" class="form-label">CPF do Cliente</label>
+            <input type="text" class="form-control" id="cpfCliente" placeholder="Apenas números" required>
         </div>
         <div class="col-md-6">
-            <label for="inputAssento" class="form-label">Assento</label>
-            <input type="text" class="form-control" id="assento" placeholder="Digite a letra/número do assento">
+            <label for="assento" class="form-label">Assento</label>
+            <input type="text" class="form-control" id="assento" placeholder="Ex: H12" required>
         </div>
         <div class="col-md-6">
             <label for="selectPagamento" class="form-label">Pagamento</label>
             <select id="selectPagamento" class="form-select" required>
-                 <option selected>Selecione a forma de pagamento</option>
-                 <option>Cartão de Crédito</option>
-                 <option>Cartão de Débito</option>
-                 <option>Pix</option>
-                 <option>Dinheiro</option>
+                 <option value="" selected>Selecione a forma de pagamento</option>
+                 <option value="Cartão de Crédito">Cartão de Crédito</option>
+                 <option value="Cartão de Débito">Cartão de Débito</option>
+                 <option value="Pix">Pix</option>
+                 <option value="Dinheiro">Dinheiro</option>
             </select>
         </div>
-        <div class="col-12">
-            <button type="submit" class="btn btn-warning">Confirmar Venda</button>
+        <div class="col-12 mt-4 text-end">
+            <button type="submit" class="btn btn-warning fw-bold px-5">Confirmar Venda</button>
         </div>
     </form>    
 
@@ -113,6 +112,7 @@
         </div>
     </footer>
 
+    <script src="./js/script.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 </body>
