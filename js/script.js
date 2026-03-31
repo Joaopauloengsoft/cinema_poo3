@@ -1,6 +1,6 @@
 // Aguarda o HTML carregar completamente antes de rodar o script
 document.addEventListener("DOMContentLoaded", function () {
-    
+
     const formFilme = document.getElementById("formFilme");
 
     // Só executa se o formulário existir na página atual
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Aguarda o HTML carregar completamente antes de rodar o script
 document.addEventListener("DOMContentLoaded", function () {
-    
+
     // ==========================================
     // LÓGICA DO CADASTRO DE FILMES (Já estava aqui)
     // ==========================================
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
             formSala.reset();
         });
     }
-}); 
+});
 
 // Aguarda o HTML carregar completamente antes de rodar o script
 document.addEventListener("DOMContentLoaded", function () {
@@ -111,8 +111,22 @@ document.addEventListener("DOMContentLoaded", function () {
         salasSalvas.forEach(sala => {
             let option = document.createElement("option");
             option.value = sala.nome;
-            option.textContent = `${sala.nome} (Capacidade: ${sala.capacidade})`;
+            option.textContent = `${sala.nome} (Capacidade: ${sala.capacidade}) (${sala.tipoTela})`;
             selectSala.appendChild(option);
+        });
+
+        // ✅ NOVO: Ao trocar a sala, preenche o formato automaticamente
+        selectSala.addEventListener("change", function () {
+            const nomeSalaSelecionada = this.value;
+            const sala = salasSalvas.find(s => s.nome === nomeSalaSelecionada);
+
+            const inputFormato = document.getElementById("inputFormato");
+
+            if (sala && inputFormato) {
+                inputFormato.value = sala.tipoTela;
+            } else {
+                inputFormato.value = "";
+            }
         });
 
         // --- 2. SALVAR A NOVA SESSÃO AO CLICAR NO BOTÃO ---
@@ -133,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem("sessoes", JSON.stringify(sessoesSalvas));
 
             alert(`Sessão do filme "${novaSessao.filme}" agendada com sucesso!`);
-            
+
             // Limpa o formulário, mas não apaga as opções dos selects
             formSessao.reset();
         });
@@ -166,17 +180,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
             let option = document.createElement("option");
             // Usamos o 'index' como valor para saber exatamente qual sessão foi escolhida
-            option.value = index; 
+            option.value = index;
             // Mostra Filme, Sala, Data e Preço na mesma linha
             option.textContent = `${sessao.filme} | ${sessao.sala} | ${dataFormatada} | R$ ${sessao.preco}`;
-            
+
             selectSessao.appendChild(option);
         });
 
         // 2. Verifica se a página foi chamada com um ID específico (Ex: venda-ingressos.html?id=1)
         const urlParams = new URLSearchParams(window.location.search);
         const idSessaoUrl = urlParams.get('id');
-        
+
         if (idSessaoUrl !== null && sessoesSalvas[idSessaoUrl]) {
             // Se tiver um ID válido, seleciona automaticamente essa sessão na lista
             selectSessao.value = idSessaoUrl;
@@ -204,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem("vendas", JSON.stringify(vendasSalvas));
 
             alert(`Venda confirmada!\nCliente: ${novaVenda.cliente}\nAssento: ${novaVenda.assento}\nValor: R$ ${sessaoEscolhida.preco}`);
-            
+
             formVenda.reset();
             // Reseta também o parâmetro da URL caso a pessoa queira fazer outra venda
             window.history.replaceState({}, document.title, window.location.pathname);
@@ -257,8 +271,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const tr = document.createElement("tr");
             tr.innerHTML = `
-    <td>${sessao.filme  || "—"}</td>
-    <td>${sessao.sala   || "—"}</td>
+    <td>${sessao.filme || "—"}</td>
+    <td>${sessao.sala || "—"}</td>
     <td>${dataHora}</td>
     <td>${preco}</td>
     <td>${sessao.idioma || "—"}</td>
